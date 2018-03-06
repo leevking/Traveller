@@ -1,0 +1,102 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.levking.ivan.traveller.fragments.DialogListItemFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/depFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/flag_af"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/depCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:textSize="16dp"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="@+id/depFlag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/depFlag"
+        app:layout_constraintTop_toTopOf="@+id/depFlag"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/depDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:textSize="16dp"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/depCountryName"
+        app:layout_constraintStart_toStartOf="@+id/depFlag"
+        app:layout_constraintTop_toBottomOf="@+id/depFlag" />
+
+    <ImageView
+        android:id="@+id/destFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/flag_af"
+        app:layout_constraintStart_toStartOf="@+id/depFlag"
+        app:layout_constraintTop_toBottomOf="@+id/depDate" />
+
+    <TextView
+        android:id="@+id/destCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:textSize="16dp"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="@+id/destFlag"
+        app:layout_constraintEnd_toEndOf="@+id/depCountryName"
+        app:layout_constraintStart_toEndOf="@+id/destFlag"
+        app:layout_constraintTop_toTopOf="@+id/destFlag" />
+
+    <TextView
+        android:id="@+id/destDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:textSize="16dp"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/destCountryName"
+        app:layout_constraintStart_toStartOf="@+id/destFlag"
+        app:layout_constraintTop_toBottomOf="@+id/destFlag" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:textSize="16dp"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/depCountryName"
+        app:layout_constraintStart_toStartOf="@+id/destFlag"
+        app:layout_constraintTop_toBottomOf="@+id/destDate" />
+</android.support.constraint.ConstraintLayout>
